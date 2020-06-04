@@ -1,8 +1,6 @@
 # Immutability and Mutability in Javascript
 
-I usually think that a variable is mutable only if its value can be changed. This may be true to some extent but I find it confusing. 
-
-A quote from [MDN about Mutable variable](https://developer.mozilla.org/en-US/docs/Glossary/Mutable)
+I usually think that a variable is mutable only if its value can be changed. This may be true to some extent but I find it confusing. A quote from [MDN about Mutable variable](https://developer.mozilla.org/en-US/docs/Glossary/Mutable)
 
 > /Mutable/ is a type of variable that can be changed. In [JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript) , only [objects](https://developer.mozilla.org/en-US/docs/Glossary/Object) and [arrays](https://developer.mozilla.org/en-US/docs/Glossary/Array) are mutable, not [primitive values](https://developer.mozilla.org/en-US/docs/Glossary/primitive) .
 
@@ -24,9 +22,9 @@ console.log(string); // Outputs Bola Buari
 
 This means the variable `number` was changed from `5` to `6` and the variable `string` was changed from `Bola` to `Bola Buari`.🤔
 
-These variable were changed but that does not make them mutable. This actuary mean that when `number` and `string` was changed, they became a new value.
+These variables were changed but that does not make them mutable. This means that when `number` and `string` was changed, they became a new value.
 
-A good example to illustrate this is copying the variables and changing the copied variable. If the variable is mutable the original variable is changed, if its immutable the original variable is not change, since chasing it creates a new variable of it’s own.
+A good example to illustrate this is copying the variables and changing the copied variable. if the variable is mutable the original variable is changed, if it's immutable the original variable is not changed since chasing it creates a new variable of its own.
 
 ```js
 var originalNumber = 20;
@@ -56,7 +54,7 @@ console.log(originalObject); // Outputs {name: 'Bola', gender: 'Male', job: 'Dev
 
 As seen in the above examples, when copies of array and object are changed, the original variable is changed while for primitive types like string and number, the original variables are not changed.
 
-What makes me understand immutability more clearly is this, immutable variables are variables that do not change when their copy are changed while mutable variables changes when their copy are changed.
+What makes me understand immutability more clearly is this, immutable variables are variables that do not change when their copy is changed while mutable variables changes when their copy is changed.
 
 ### Resources
 
